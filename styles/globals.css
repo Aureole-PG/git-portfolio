@@ -14,3 +14,29 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.txt-subtitle-color {
+  color: rgb(107, 107, 107);
+}
+.main-vertical-margin {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.profile-img {
+  width: 300px;
+  margin-block: 25px;
+}
+.scroll {
+  overflow-y: auto;
+}
+
+/* TimeLine */
+
+.card-content {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.no-margin {
+  margin: 0;
+}
