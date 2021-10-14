@@ -32,11 +32,35 @@ a {
 
 /* TimeLine */
 
-.card-content {
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
+.info-card {
+  background-color: #f9f3f3;
+  margin-block: 5px;
 }
 .no-margin {
   margin: 0;
+}
+
+/* texto */
+
+.text-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-variant: petite-caps;
+}
+.text-subtitle {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+
+.text-time {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-style: oblique;
+}
+.icon-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

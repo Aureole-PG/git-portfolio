@@ -10,10 +10,10 @@ const DataProvider = ({ children }) => {
   const [data, setData] = useState(initialData);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://api.github.com/users/jeffqev")
+    fetch(process.env.GIT_URL)
       .then((response) => response.json())
       .then((profile) => {
-        fetch("https://api.github.com/users/jeffqev/repos")
+        fetch(process.env.GIT_REPOS)
           .then((response2) => response2.json())
           .then((repos) => {
             const backend = repos.filter(

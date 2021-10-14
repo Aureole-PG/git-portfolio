@@ -1,0 +1,40 @@
+body {
+  background-color: #f9f3f3;
+}
+.info-card {
+  background-color: #edf2f4;
+  margin: 2px;
+}
+
+.section-title {
+  border-bottom: 1px solid #f25287;
+}
+
+@media (max-width: 751px) {
+  .profile {
+    border-bottom: 1px solid #f25287;
+  }
+}
+@media (min-width: 751px) {
+  .profile {
+    border-right: 1px solid #f2528780;
+  }
+}
+.icon-link {
+  color: black;
+}
+.icon-link:hover {
+  color: #2b2d42;
+}
+
+.icon-info {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-info i {
+  font-size: 50px;
+}
