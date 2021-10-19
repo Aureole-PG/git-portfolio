@@ -26,8 +26,12 @@ a {
   width: 300px;
   margin-block: 25px;
 }
-.scroll {
-  overflow-y: auto;
+.profile-img-phone {
+  width: 100px;
+  margin-block: 25px;
+}
+.profile {
+  min-height: 100vh;
 }
 
 /* TimeLine */
@@ -35,6 +39,7 @@ a {
 .info-card {
   background-color: #f9f3f3;
   margin-block: 5px;
+  border-radius: 5px;
 }
 .no-margin {
   margin: 0;
@@ -54,7 +59,7 @@ a {
 
 .text-time {
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-style: oblique;
 }
 .icon-link {
@@ -63,4 +68,76 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.item-card {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* padding-block: 30px;
+  padding-inline: 20px; */
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+  /* height: 100%; */
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+}
+.item-card:hover .card-title {
+  /* top: -20px; */
+  transform: translateY(-50px);
+  position: absolute;
+  right: 0px;
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+}
+.card-title {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 5px;
+  transition: transform 250ms;
+}
+.description {
+  margin: 0 20px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+.item-card:hover .description {
+  height: 100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.btn-link- {
+  width: auto;
+  text-decoration: none;
+  background: none;
+  padding: 0.7em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.content {
+  min-height: 90vh;
+  padding: 10px;
+  border-radius: 10px;
 }

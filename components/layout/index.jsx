@@ -2,11 +2,18 @@ import Profile from "../profile";
 import Link from "next/link";
 const Layout = ({ children }) => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
-        <div className="col-md-4 col-sm-12 profile">
+        {/* <div className=".d-none .d-md-block "> */}
+        <div className="col-md-4 d-none d-md-block">
           <Profile />
         </div>
+        {/* </div> */}
+        {/* <div className="d-block d-md-none"> */}
+        <div className="col-sm-12 d-block d-md-none">
+          <Profile phone={true} />
+        </div>
+        {/* </div> */}
         <div className="col-md-8 col-sm-12">
           <ul
             style={{ width: "100%" }}
@@ -41,7 +48,7 @@ const Layout = ({ children }) => {
               </Link>
             </li>
           </ul>
-          <div className="scroll">{children}</div>
+          <div className="content">{children}</div>
         </div>
       </div>
     </div>
